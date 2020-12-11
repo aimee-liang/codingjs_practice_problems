@@ -8,3 +8,13 @@ Examples:
     endUp('hi there') → hi thERE
     endUp('hi') → HI 
 */
+
+function endUp(str){
+    if (str.length < 3){ // edge cases
+        let newString = str.toUpperCase()
+        return newString
+    } else {
+        str = str.replace(/\s+/g, ''); //removes whitespace from string if there
+        for (let i = str.length, )
+    }
+}

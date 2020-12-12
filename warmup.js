@@ -13,7 +13,7 @@ function endUp(str){
     if (str.length < 3){
         return str.toUpperCase()
     } else {
-        // turn to array
+        // turn to array and save white space in new array
         // iterate from the back
         // push the three characters to a new array
         // reverse, make uppercase, join

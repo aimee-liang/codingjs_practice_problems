@@ -10,11 +10,13 @@ Examples:
 */
 
 function endUp(str){
-    if (str.length < 3){ // edge cases
-        let newString = str.toUpperCase()
-        return newString
+    if (str.length < 3){
+        return str.toUpperCase()
     } else {
-        str = str.replace(/\s+/g, ''); //removes whitespace from string if there
-        for (let i = str.length, )
+        // turn to array
+        // iterate from the back
+        // push the three characters to a new array
+        // reverse, make uppercase, join
+        // join back with the other characters
     }
 }

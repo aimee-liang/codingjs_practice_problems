@@ -14,9 +14,18 @@ function endUp(str){
         return str.toUpperCase()
     } else {
         // turn to array and save white space in new array
-        // iterate from the back
-        // push the three characters to a new array
+        let stringToArray = str.split(/(\s+)/);
+        let capitals = []
+        let index = 3
+        // iterate from the back & push the characters to a new array
+        for (let i = stringToArray.length-1; i >=0; i++){
+            capitals.push(stringToArray[i])
+        }
         // reverse, make uppercase, join
+        let lastThree = capitals.splice(index).toUpperCase().reverse().join()
         // join back with the other characters
+        let restOfString = capitals.reverse().join()
+        return restOfString.concat(lastThree)
     }
 }
+

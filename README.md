@@ -3,4 +3,4 @@
 
 
 ### Purpose
-Practice Problems. Source: [CodingJS](https://the-winter.github.io/codingjs/)
+Practice Problems for Algorithms Practice. Source: [CodingJS](https://the-winter.github.io/codingjs/)

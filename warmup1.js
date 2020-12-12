@@ -1,4 +1,4 @@
-/* Warmup-1 -- endUp
+/* endUp
 Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. 
 Note that str.toUpperCase() returns the uppercase version of a string.
 
@@ -28,7 +28,7 @@ function endUp(str){
     }
 }
 
-/* Warmup-1 -- sleepIn
+/* sleepIn
 The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
 
 Examples
@@ -46,6 +46,6 @@ function sleepIn(weekday, vacation){
     } else if (!weekday){
         return true // if it's a weekend, we sleep in and it's true
     } else if {
-        
+
     }
 }

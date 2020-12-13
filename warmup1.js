@@ -38,14 +38,12 @@ sleepIn(true, false) → false
 sleepIn(false, true) → true */
 
 function sleepIn(weekday, vacation){
-    // weekday === true
-    // vacation === true
-    // if (!weekday) == false
-    if (weekday || vacation){
-        return true // if it is a weekday or we're on vacation
-    } else if (!weekday){
-        return true // if it's a weekend, we sleep in and it's true
-    } else if {
-
+    if (!weekday){
+        return true
+    } else if (vacation){
+        return true
+    } else {
+        return false
     }
 }
+

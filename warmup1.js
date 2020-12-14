@@ -1,4 +1,4 @@
-/* endUp
+/* endUp -- need to return to
 Given a string, return a new string where the last 3 chars are now in upper case. If the string has less than 3 chars, uppercase whatever is there. 
 Note that str.toUpperCase() returns the uppercase version of a string.
 
@@ -78,7 +78,7 @@ function diff21(n){
     }
 }
 
-/* parrotTrouble
+/* parrotTrouble --need to return to
 We have a loud talking parrot. The "hour" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return true if we are in trouble.
  */
 
@@ -124,12 +124,7 @@ function nearHundred(n){
 
 /* posNeg
 Given 2 int values, return true if one is negative and one is positive. Except if the parameter "negative" is true, then return true only if both are negative.
-
-Examples
-
-posNeg(1, -1, false) → true
-posNeg(-1, 1, false) → true
-posNeg(-4, -5, true) → true */
+ */
 
 function posNeg(a, b, negative){
     let product = a * b
@@ -166,7 +161,7 @@ function missingChar(str, n){
     return str.replace(str.charAt(n), "")
 }
 
-/* frontBack
+/* frontBack --need to return to 
 Given a string, return a new string where the first and last chars have been exchanged.
 
 Examples

@@ -166,10 +166,6 @@ posNeg(1, -1, false) → true
 posNeg(-1, 1, false) → true
 posNeg(-4, -5, true) → true */
 
-/* if product is negative return true 
-if negative === true 
-*/
-
 function posNeg(a, b, negative){
     let product = a * b
     if (product < 0 && negative === false){
@@ -180,5 +176,24 @@ function posNeg(a, b, negative){
         return false
     } else {
         return false
+    }
+}
+
+/* notString
+Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
+
+Examples
+
+notString('candy') → not candy
+notString('x') → not x
+notString('not bad') → not bad */
+
+function notString(str){
+    let subString = "not"
+    let newString = str.slice(0, 3)
+    if (newString.includes(subString)){
+        return str
+    } else {
+        return "not " + str
     }
 }

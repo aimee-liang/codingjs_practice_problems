@@ -201,13 +201,37 @@ function or35(n){
 
 /* startHi
 Given a string, return true if the string starts with 'hi' and false otherwise.
+*/
+
+function startHi(str){
+    let subString = "hi"
+    let newString = str.slice(0,3)
+    if (newString.includes(subString)){
+        return true
+    } else {
+        return false
+    }
+}
+
+/* icyHot
+Given two temperatures, return true if one is less than 0 and the other is greater than 100.
 
 Examples
 
-startHi('hi there') → true
-startHi('hi') → true
-startHi('hello hi') → false */
+icyHot(120, -1) → true
+icyHot(-1, 120) → true
+icyHot(2, 120) → false */
 
-function startHi(str){
-  
+function icyHot(temp1, temp2){
+    if (temp1 < 0 && temp2 > 100){
+        return true
+    } else if (temp1 > 100 && temp2 > 100){
+        return false
+    } else if (temp1 > 0 && temp2 > 100){
+        return false
+    } else if (temp1 > 100 && temp2 < 0){
+        return true
+    } else if (temp1 < 0 && temp2 >= 100){
+        return false
+    }
 }

@@ -146,5 +146,13 @@ nearHundred(90) → true
 nearHundred(89) → false */
 
 function nearHundred(n){
-    if (Math.abs(n)
+    if (Math.abs(n) < 90){
+        return false
+    } else if (Math.abs(n) >= 90 && Math.abs(n) <=110){
+        return true
+    } else if (Math.abs(n) < 190){
+        return false
+    } else if (Math.abs(n) >= 190 && Math.abs(n) <= 210){
+        return true
+    }
 }

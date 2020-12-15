@@ -215,12 +215,7 @@ function startHi(str){
 
 /* icyHot
 Given two temperatures, return true if one is less than 0 and the other is greater than 100.
-
-Examples
-
-icyHot(120, -1) → true
-icyHot(-1, 120) → true
-icyHot(2, 120) → false */
+ */
 
 function icyHot(temp1, temp2){
     if (temp1 < 0 && temp2 > 100){
@@ -232,6 +227,34 @@ function icyHot(temp1, temp2){
     } else if (temp1 > 100 && temp2 < 0){
         return true
     } else if (temp1 < 0 && temp2 >= 100){
+        return false
+    }
+}
+
+/* in1020 --need to return to
+Given 2 int values, return true if either of them is in the range 10..20 inclusive.
+
+Examples
+
+in1020(12, 99) → true
+in1020(21, 12) → true
+in1020(8, 99) → false */
+
+function in1020(a, b){
+
+}
+
+/* lastDigit
+Given two non-negative int values, return true if they have the same last digit, such as with 27 and 57. Note that the % 'mod' operator computes remainders, so 17 % 10 is 7.
+ */
+
+function lastDigit(a, b){
+    let lastDigitOfA = a % 10
+    let lastDigitOfB = b % 10
+
+    if (lastDigitOfA === lastDigitOfB){
+        return true
+    } else {
         return false
     }
 }

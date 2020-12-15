@@ -288,3 +288,20 @@ function intMax(a, b, c){
     }
     return largest
 }
+
+/* close10
+Given 2 int values, return whichever value is nearest to the value 10, or return 0 in the event of a tie. Note that Math.abs(n) returns the absolute value of a number.
+*/
+
+function close10(a, b){
+    let diffA = Math.abs(10 - a)
+    let diffB = Math.abs(10 - b)
+
+    if (diffA < diffB){
+        return a
+    } else if (diffA > diffB) {
+        return b
+    } else if (diffA === diffB) {
+        return 0
+    }
+}

@@ -258,3 +258,19 @@ function lastDigit(a, b){
         return false
     }
 }
+
+/* stringE
+Return true if the given string contains between 1 and 3 'e' chars.
+*/
+
+function stringE(str){
+    let count = {}
+    str = str.split('').forEach((i){
+        count[i] = (count[i] || 0) + 1
+    })
+    if (0 < count["e"] && count["e"] < 4 ){
+        return true
+    } else {
+        return false
+    }
+}

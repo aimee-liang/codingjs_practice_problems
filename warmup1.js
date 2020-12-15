@@ -274,3 +274,17 @@ function stringE(str){
         return false
     }
 }
+
+/* intMax
+Given three int values, a b c, return the largest.
+*/
+
+function intMax(a, b, c){
+    let largest = (a > b ) ? largest = a : largest = b
+    if (largest > c){
+        return largest
+    } else {
+        largest = c
+    }
+    return largest
+}

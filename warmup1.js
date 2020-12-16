@@ -171,7 +171,7 @@ frontBack('a') → a
 frontBack('ab') → ba */
 
 function frontBack(str){
-
+    
 }
 
 /* front3
@@ -339,4 +339,34 @@ Given a string, take the last char and return a new string with the last char ad
 function backAround(str){
     let lastLetter = str[str.length-1]
     return lastLetter+str+lastLetter
+}
+
+/* loneTeen --need to return to
+We'll say that a number is 'teen' if it is in the range 13..19 inclusive. Given 2 int values, return true if one or the other is teen, but not both.
+
+Examples
+
+loneTeen(13, 99) → true
+loneTeen(21, 19) → true
+loneTeen(13, 13) → false */
+
+function loneTeen(a, b){
+
+}
+
+/* front22
+Given a string, take the first 2 chars and return the string with the 2 chars added at both the front and back, so 'kitten' yields 'kikittenki' chars are there.
+*/
+
+function front22(str){
+    if (str.length === 0){
+        return ""
+    } else if (str.length === 1){
+        return str[0]+str[0]+str[0]
+    } else if (str.length === 2){
+        return str+str+str
+    } else if (str.length > 2){
+        let newStr = str.slice(0, 2)
+        return newStr+str+newStr
+    }
 }

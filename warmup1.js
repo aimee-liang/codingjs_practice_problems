@@ -265,9 +265,9 @@ Return true if the given string contains between 1 and 3 'e' chars.
 
 function stringE(str){
     let count = {}
-    str = str.split('').forEach((i){
+    str = str.split('').forEach((i) =>
         count[i] = (count[i] || 0) + 1
-    })
+    )
     if (0 < count["e"] && count["e"] < 4 ){
         return true
     } else {
@@ -303,5 +303,18 @@ function close10(a, b){
         return b
     } else if (diffA === diffB) {
         return 0
+    }
+}
+
+/* mixStart
+Return true if the given string begins with 'mix', except the 'm' can be anything, so 'pix', '9ix' .. all count.
+*/
+
+function mixStart(str){
+    let newStr = str.slice(0, 3)
+    if (newStr.includes("ix")){
+        return true
+    } else {
+        return false
     }
 }

@@ -36,3 +36,14 @@ function rotateLeft3(nums){
     let first = nums.splice(0,1)
     return nums.concat(first)
 }
+
+/* reverse3
+Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}. */
+
+function reverse3(nums){
+    let newArr = []
+    for (let i = nums.length - 1; i >= 0; i++){
+        newArr.push(nums[i])
+    }
+    return newArr
+}

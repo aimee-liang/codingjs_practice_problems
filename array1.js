@@ -22,12 +22,17 @@ function makePi(){
     return arrayOfPi
 }
 
-/* commonEnd
+/* commonEnd -- need to return to
 Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more. */
 
 function commonEnd(a, b){
-    let aValues = []
-    let bValues = []
+    let ab = [a, ...b]
 
-    
+}
+
+/* sum3
+Given an array of ints length 3, return the sum of all the elements. */
+
+function sum3(nums){
+    return nums.reduce((a , b) => a + b, 0)
 }

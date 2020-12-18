@@ -13,3 +13,11 @@ function sameFirstLast(nums){
     if (nums.length >= 1 && nums[0] === nums[nums.length-1]) return true
     return false
 }
+
+/* makePi
+Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}. */
+
+function makePi(){
+    let arrayOfPi = [3, 1, 4]
+    return arrayOfPi
+}

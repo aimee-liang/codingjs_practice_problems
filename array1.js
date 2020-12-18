@@ -21,3 +21,13 @@ function makePi(){
     let arrayOfPi = [3, 1, 4]
     return arrayOfPi
 }
+
+/* commonEnd
+Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more. */
+
+function commonEnd(a, b){
+    let aValues = []
+    let bValues = []
+
+    
+}

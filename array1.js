@@ -47,3 +47,22 @@ function reverse3(nums){
     }
     return newArr
 }
+
+/* maxEnd3
+Given an array of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array. */
+
+function maxEnd3(nums){
+
+
+}
+
+/* sum2
+Given an array of ints, return the sum of the first 2 elements in the array. If the array length is less than 2, just sum up the elements that exist, returning 0 if the array is length 0. */
+function sum2(nums){
+    if (nums.length === 0) {
+        return 0
+    } else {
+    let newSum = nums.splice(0, 2)
+    return newSum.reduce((acc, cur) => acc+cur, 0)
+    }
+}

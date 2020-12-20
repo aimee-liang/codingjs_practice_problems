@@ -114,4 +114,13 @@ Given 2 int arrays, each length 2, return a new array length 4 containing all th
 
 function plusTwo(a, b){
     return a.concat(b)
+} 
+
+/* frontPiece
+Given an int array of any length, return a new array of its first 2 elements. If the array is smaller than length 2, use whatever elements are present. */
+
+function frontPiece(nums){
+    if (nums.length <= 2) return nums
+    let newArr = nums.splice(0, 2)
+    return newArr
 }

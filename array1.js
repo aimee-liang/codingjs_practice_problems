@@ -86,3 +86,16 @@ function has23(nums){
         }
     }
 }
+
+/* no23
+Given an int array length 2, return true if it does not contain a 2 or 3. */
+
+function no23(nums){
+    for (let i = 0; i < nums.length; i++){
+        if (nums.includes(2) || nums.includes(3)){
+            return false
+        } else {
+            return true
+        }
+    }
+}

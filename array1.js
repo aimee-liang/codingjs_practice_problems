@@ -73,3 +73,16 @@ Given an array of ints, return a new array length 2 containing the first and las
 function makeEnds(nums){
     return [nums[0], nums[nums.length-1]]
 }
+
+/* has23
+Given an int array length 2, return true if it contains a 2 or a 3. */
+
+function has23(nums){
+    for (let i = 0; i < nums.length; i++){
+        if (nums.includes(2) || nums.includes(3)){
+            return true
+        } else {
+            return false
+        }
+    }
+}

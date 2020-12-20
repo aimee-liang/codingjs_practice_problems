@@ -108,3 +108,10 @@ function double23(nums){
     if (nums[0] === nums[nums.length-1]) return true
     return false
 }
+
+/* plusTwo
+Given 2 int arrays, each length 2, return a new array length 4 containing all their elements. */
+
+function plusTwo(a, b){
+    return a.concat(b)
+}

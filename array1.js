@@ -132,3 +132,10 @@ function commonEnd(a, b){
     if (a[0] === b[0] || a[a.length-1] === b[b.length-1]) return true
     return false
 }
+
+/* middleWay
+Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements. */
+
+function middleWay(a, b){
+    return [a[1], b[1]]
+}

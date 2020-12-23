@@ -47,3 +47,12 @@ function sum28(nums){
     if (sum === 8)return true
     return false
 }
+
+/* prependSum
+Return a modified version of the input array (nums), where the first two items have been removed and one item – the sum of those two items - is added to the start of the array. */
+
+function prependSum(nums){
+    let removed = nums.splice(0, 2)
+    removed = removed[0] + removed[1]
+    return [removed, ...nums]
+}

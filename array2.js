@@ -31,3 +31,19 @@ function more14(nums){
         return false
     }
 }
+
+/* sum28
+Given an array of ints, return true if the sum of all the 2's in the array is exactly 8. */
+
+function sum28(nums){
+    let sum = 0
+    
+    nums.forEach((x) => {
+        if (x === 2){
+            sum += 2
+        }
+    })
+    
+    if (sum === 8)return true
+    return false
+}

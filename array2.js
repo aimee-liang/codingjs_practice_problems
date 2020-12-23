@@ -9,3 +9,25 @@ function countEvens(nums){
     }
     return total
 }
+
+/* more14
+Given an array of ints, return true if the number of 1's is greater than the number of 4's */
+
+function more14(nums){
+    let one = 0
+    let four = 0
+    
+    nums.forEach((x) => {
+        if (x === 1){
+        one += 1
+        } else if (x == 4) {
+        four += 1
+        }
+    }
+    
+    if (one > four) {
+        return true
+    } else if (one == four || one < four) {
+        return false
+    }
+}
